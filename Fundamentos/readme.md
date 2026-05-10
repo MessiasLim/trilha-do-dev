@@ -20,48 +20,84 @@ Esta trilha cobre a base que todo dev precisa dominar antes de partir para frame
 fundamentos/
 │
 ├── html/                        # Fundamentos de HTML
-│   ├── o-que-e-html.html
-│   ├── estrutura-basica.html
-│   ├── tags-semanticas.html
-│   ├── tags-de-texto.html
-│   ├── listas.html
-│   ├── links.html
-│   ├── imagens.html
-│   ├── formularios.html
-│   ├── validacao-html5.html
-│   ├── tabelas.html
-│   ├── audio-video.html
-│   ├── conteudo-externo.html
-│   ├── atributos-globais.html
-│   ├── acessibilidade-aria.html
-│   ├── meta-tags-seo.html
-│   ├── boas-praticas-html.html
-│   ├── otimizacoes-modernas.html
-│   ├── emmet-atalhos-iniciantes.html
-│   ├── emmet-atalhos-intermediarios.html
-│   └── emmet-atalhos-avancados.html
+│   ├── aula01-o-que-e-html.html
+│   ├── aula02-estrutura-basica.html
+│   ├── aula03-tags-semanticas.html
+│   ├── aula04-tags-de-texto.html
+│   ├── aula05-listas.html
+│   ├── aula06-links.html
+│   ├── aula07-imagens.html
+│   ├── aula08-formularios.html
+│   ├── aula09-validacao-html5.html
+│   ├── aula10-tabelas.html
+│   ├── aula11-audio-video.html
+│   ├── aula12-conteudo-externo.html
+│   ├── aula13-atributos-globais.html
+│   ├── aula14-acessibilidade-aria.html
+│   ├── aula15-meta-tags-seo.html
+│   ├── aula16-boas-praticas-html.html
+│   ├── aula17-otimizacoes-modernas.html
+│   ├── aula18-emmet-atalhos-iniciantes.html
+│   ├── aula19-emmet-atalhos-intermediarios.html
+│   ├── aula20-emmet-atalhos-avancados.html
+│   └── style.css
 │
 ├── css/                         # Fundamentos de CSS
 │   ├── fundamentos/             # Seletores, box-model, display, posicionamento
+│   │   ├── aula01-seletores.css
+│   │   ├── aula02-box-model.css
+│   │   ├── aula03-display.css
+│   │   ├── aula04-posicionamento.css
+│   │   └── index.html
 │   ├── estilos/                 # Cores, fontes e variáveis CSS
+│   │   ├── aula01-variaveis.css
+│   │   ├── aula02-cores.css
+│   │   ├── aula03-fontes.css
+│   │   └── aula04-index.html
 │   ├── layout/                  # Flexbox, Grid e alinhamento
+│   │   ├── aula01-flexbox.css
+│   │   ├── aula02-grid.css
+│   │   ├── aula03-alinhamento.css
+│   │   └── index.html
 │   ├── componentes/             # Botões, cards e componentes reutilizáveis
+│   │   ├── aula01-botao.css
+│   │   ├── aula02-card.css
+│   │   └── index.html
 │   └── responsivo/              # Media queries e design mobile-first
+│       └── aula01-media-queries.css
 │
 ├── javascript/                  # Fundamentos de JavaScript
-│   ├── sintaxe/                 # Variáveis, operadores, condicionais, loops, funções, arrays e objetos
+│   ├── sintaxe/                 # Variáveis, operadores, condicionais, loops, funções, 
+│   │   ├── aula01-variaveisETipos.js
+│   │   ├── aula02-operadores.js
+│   │   ├── aula03-condicionais.js
+│   │   ├── aula04-loops.js
+│   │   ├── aula05-arrays.js
+│   │   ├── aula06-objetos.js
+│   │   ├── aula07-funcoes.js
+│   │   └── aula08-sintaxe.js
 │   └── dom/                     # Manipulação do DOM na prática
+│       ├── dom.html
+│       └── aula01-dom.js
 │
 ├── markdown/                    # Markdown para documentação
-│   └── markdown.md
+│   └── aula01-markdow.md
 │
 ├── git-github/                  # Versionamento com Git e GitHub
-│   └── curso-git-github.md
+│   └── aula01-curso-git-github.md
 │
 └── exercicios/                  # Desafios práticos
     ├── exercicios-html/
+    │   ├── aula01-exercicios-html.md
+    │   └── exercicios-pratica.html
     ├── exercicios-css/
-    └── exercicios-js/
+    │   ├── aula01-exercicios-css.md
+    │   ├── exercicio-pratica.css
+    │   └── exercicios-pratica.html
+    └── exercicios-Js/
+        ├── aula01-exercicios-Logica-basico.js
+        ├── exercicios-Logica-basico.md
+        └── exercicios-Pratica.js
 ```
  
 ---

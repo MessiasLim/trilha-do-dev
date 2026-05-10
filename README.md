@@ -38,19 +38,19 @@ Mais do que um repositório de materiais, é um lugar onde você pode **aprender
 
 | Trilha | O que você aprende | Nível |
 |---|---|---|
-| [Fundamentos](./Fundamentos/) | HTML, CSS, JavaScript, Git e GitHub | Iniciante |
+| [Fundamentos](./fundamentos/) | HTML, CSS, JavaScript, Git e GitHub | Iniciante |
 
 ### Em breve
 
 | Trilha | Tecnologias previstas |
 |---|---|
-| [Frontend](./Frontend/) | React, Vue.js, Svelte, TypeScript |
-| [Backend](./Backend/) | Node.js, Java, Python, PHP, Go, C# |
-| [Mobile](./Bobile/) | React Native, Flutter, Kotlin |
-| [Games](./Games/) | Unity, Godot, Pygame |
-| [Banco de Dados](./Banco-de-dados/) | SQL, PostgreSQL, MongoDB |
-| [DevOps](./Devops/) | Docker, GitHub Actions, Deploy |
-| [Inteligência Artificial](./Inteligencia-Artificial/) | Python, Machine Learning |
+| [Frontend](./Trilhas/frontend/) | React, Vue.js, Svelte, TypeScript |
+| [Backend](./Trilhas/backend/) | Node.js, Java, Python, PHP, Go, C# |
+| [Mobile](./Trilhas/mobile/) | React Native, Flutter, Kotlin |
+| [Games](./Trilhas/games/) | Unity, Godot, Pygame |
+| [Banco de Dados](./Trilhas/banco-de-dados/) | SQL, PostgreSQL, MongoDB |
+| [DevOps](./Trilhas/devops/) | Docker, GitHub Actions, Deploy |
+| [Inteligência Artificial](./Trilhas/inteligencia-artificial/) | Python, Machine Learning |
 
 > As trilhas marcadas como **Em breve** estão abertas para contribuição.  
 > Quer ajudar a construir uma delas? Veja como em [CONTRIBUTING.md](./CONTRIBUTING.md).
@@ -60,7 +60,7 @@ Mais do que um repositório de materiais, é um lugar onde você pode **aprender
 ## Por onde começar?
 
 **Se você nunca programou antes:**
-→ Comece pela trilha de [Fundamentos](./Fundamentos/)
+→ Comece pela trilha de [Fundamentos](./fundamentos/)
 
 **Se você já sabe o básico e quer ir para uma área específica:**
 → Escolha uma trilha na tabela acima e acesse a pasta correspondente
@@ -75,19 +75,56 @@ Mais do que um repositório de materiais, é um lugar onde você pode **aprender
 ```
 TrilhaDoDev/
 │
-├── Fundamentos/              # Base para todo dev (HTML, CSS, JS, Git)
-├── Frontend/                 # Frameworks e bibliotecas de interface
-├── Backend/                  # Servidores, APIs e lógica de negócio
-│   └── _conceitos-gerais/    # Teoria compartilhada entre linguagens
-├── Mobile/                   # Desenvolvimento de aplicativos
-├── Games/                    # Desenvolvimento de jogos
-├── Banco-de-dados/           # SQL e bancos NoSQL
-├── Devops/                   # Infraestrutura e automação
-├── Inteligencia-Artificial/  # IA e Machine Learning
+├── roadmaps/               # Caminhos de estudo por objetivo
 │
-├── CONTRIBUTING.md           # Como contribuir com o projeto
-├── TEMPLATE.md               # Template para criar novo conteúdo
-└── README.md                 # Este arquivo
+├── fundamentos/            # Base obrigatória para todo dev
+│   ├── html/
+│   ├── css/
+│   ├── javascript/
+│   ├── git-github/
+│   └── exercicios/
+│
+├── Trilhas/        # Módulos por área e stack
+│   ├── frontend/
+│   │   ├── _conceitos/     # Teoria agnóstica (SPA, componentização...)
+│   │   ├── react/
+│   │   ├── vue/
+│   │   └── svelte/
+│   │
+│   ├── backend/
+│   │   ├── _conceitos/     # Teoria agnóstica (REST, JWT, CRUD...)
+│   │   ├── node/
+│   │   ├── python/
+│   │   ├── java/
+│   │   └── go/
+│   │
+│   ├── banco-de-dados/
+│   │   ├── _conceitos/     # Teoria agnóstica (modelagem, índices...)
+│   │   ├── postgresql/
+│   │   └── mongodb/
+│   │
+│   ├── mobile/
+│   ├── devops/
+│   ├── games/
+│   └── inteligencia-artificial/
+│
+├── projetos/               # Projetos práticos por nível
+│   ├── iniciante/
+│   ├── intermediario/
+│   └── avancado/
+│
+├── desafios/               # Exercícios avulsos para praticar
+│
+├── guias/                  # Habilidades transversais
+│   ├── como-estudar.md
+│   ├── como-pesquisar.md
+│   ├── como-usar-git.md
+│   └── como-contribuir.md
+│
+├── CONTRIBUTING.md
+├── TEMPLATE.md
+├── STYLE_GUIDE.md
+└── README.md
 ```
 
 ---
