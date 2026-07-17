@@ -3,7 +3,7 @@
 > **Como usar este arquivo:**
 > Copie a estrutura abaixo para criar um novo módulo de conteúdo.
 > Delete os blocos que não se aplicam e substitua tudo que estiver entre `< >`.
-> Este template é obrigatório para manter o padrão do projeto.
+> Este template ajuda a manter um padrão de leitura e navegação no projeto.
 
 ---
 

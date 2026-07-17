@@ -1,311 +1,185 @@
-# Como Contribuir com o TrilhaDoDev
+# Como contribuir com o TrilhaDoDev
 
-Obrigado por querer fazer parte do TrilhaDoDev! Este arquivo explica tudo o que você precisa saber para contribuir de forma organizada e profissional.
-
----
-
-## Índice
-
-1. [Antes de começar](#1-antes-de-começar)
-2. [Fluxo de trabalho](#2-fluxo-de-trabalho)
-3. [Estrutura do repositório](#3-estrutura-do-repositório)
-4. [Padrão de pastas e arquivos](#4-padrão-de-pastas-e-arquivos)
-5. [Padrão de commits](#5-padrão-de-commits)
-6. [Padrão de Pull Request](#6-padrão-de-pull-request)
-7. [Criando uma nova trilha](#7-criando-uma-nova-trilha)
-8. [Critérios de qualidade](#8-critérios-de-qualidade)
-9. [O que NÃO fazer](#9-o-que-não-fazer)
-10. [Dúvidas e contato](#10-dúvidas-e-contato)
+Obrigado por querer participar do projeto. O TrilhaDoDev é uma iniciativa colaborativa e sua contribuição ajuda a fortalecer o aprendizado de toda a comunidade.
 
 ---
 
-## 1. Antes de começar
+## Antes de começar
 
-### Pré-requisitos
+Antes de editar qualquer arquivo, leia:
 
-- Ter uma conta no [GitHub](https://github.com)
-- Ter o [Git](https://git-scm.com) instalado na sua máquina
-- Ter o [VS Code](https://code.visualstudio.com) ou outro editor de código
-- Conhecer o básico de Git (fork, clone, branch, commit, push, pull request)
+- [README.md](README.md) — visão geral do projeto
+- [TEMPLATE.md](TEMPLATE.md) — estrutura recomendada para novos conteúdos
+- [Guias/como-contribuir.md](Guias/como-contribuir.md) — boas práticas de contribuição
+- [Guias/como-usar-git.md](Guias/como-usar-git.md) — uso básico de Git/GitHub
 
-> **Nunca usou Git?** Sem problema! Comece pelo nosso material em `/fundamentos/git-github/` antes de contribuir.
+Também é útil ter no seu computador:
 
-### Leia antes de qualquer coisa
-
-- [`README.md`](./README.md) — Visão geral do projeto e mapa de trilhas
-- [`TEMPLATE.md`](./TEMPLATE.md) — Template obrigatório para criar conteúdo
-
----
-
-## 2. Fluxo de trabalho
-
-Todo colaborador deve seguir este fluxo. Ele simula o ambiente real de trabalho em empresas de tecnologia.
-
-```
-1. Fork  →  2. Clone  →  3. Branch  →  4. Desenvolve  →  5. Commit  →  6. Push  →  7. Pull Request
-```
-
-### Passo a passo
-
-**1. Fork**
-Clique em "Fork" no repositório oficial para criar uma cópia na sua conta.
-
-**2. Clone**
-```bash
-git clone https://github.com/SEU-USUARIO/TrilhaDoDev.git
-cd TrilhaDoDev
-```
-
-**3. Branch**
-
-Crie uma branch com um nome descritivo:
-```bash
-# Para novo conteúdo
-git checkout -b feature/backend-java-introducao
-
-# Para correção de erro
-git checkout -b fix/html-semantica-typo
-
-# Para melhoria de conteúdo existente
-git checkout -b improve/css-flexbox-exemplos
-```
-
-**4. Desenvolva**
-Crie ou edite o conteúdo seguindo o [padrão de pastas](#4-padrão-de-pastas-e-arquivos) e os [critérios de qualidade](#8-critérios-de-qualidade).
-
-**5. Commit**
-```bash
-git add .
-git commit -m "feat(backend/java): adiciona introducao e primeiros exemplos"
-```
-> Veja o [padrão de commits](#5-padrão-de-commits) para mais detalhes.
-
-**6. Push**
-```bash
-git push origin feature/backend-java-introducao
-```
-
-**7. Pull Request**
-Abra um Pull Request no repositório original. Siga o [padrão de PR](#6-padrão-de-pull-request).
+- uma conta no GitHub
+- Git instalado
+- um editor de código, como VS Code
 
 ---
 
-## 3. Estrutura do repositório
+## Tipos de contribuição
 
-```
-TrilhaDoDev/
-│
-├── fundamentos/              # Base obrigatória para todo dev
-│   ├── html/
-│   ├── css/
-│   ├── javascript/
-│   ├── git-github/
-│   └── exercicios/
-│
-├── frontend/                 # Frameworks e bibliotecas de interface
-│   ├── react/
-│   ├── vue/
-│   ├── svelte/
-│   └── typescript/
-│
-├── backend/                  # Servidores, APIs e lógica de negócio
-│   ├── _conceitos-gerais/    # Teoria agnóstica de linguagem (ex: o que é REST)
-│   ├── node-javascript/
-│   ├── java/
-│   ├── python/
-│   ├── csharp/
-│   ├── php/
-│   └── go/
-│
-├── mobile/                   # Desenvolvimento de aplicativos
-│   ├── react-native/
-│   ├── flutter/
-│   └── kotlin/
-│
-├── games/                    # Desenvolvimento de jogos
-│   ├── unity-csharp/
-│   ├── godot/
-│   └── pygame/
-│
-├── devops/                   # Infraestrutura e automação
-│   ├── docker/
-│   ├── github-actions/
-│   └── deploy/
-│
-├── banco-de-dados/           # SQL e bancos NoSQL
-│   ├── sql/
-│   ├── postgresql/
-│   └── mongodb/
-│
-├── inteligencia-artificial/  # IA e Machine Learning
-│   ├── python-basico/
-│   └── machine-learning/
-│
-├── CONTRIBUTING.md           # Este arquivo
-├── TEMPLATE.md               # Template obrigatório para novo conteúdo
-└── README.md                 # Mapa geral do projeto
-```
+Você pode contribuir de várias formas:
+
+- corrigindo informações incorretas, erros de português ou links quebrados
+- melhorando explicações e exemplos
+- adicionando novos exercícios ou materiais práticos
+- criando novos módulos dentro de uma trilha existente
+- sugerindo uma nova trilha ou tema por meio de issue
 
 ---
 
-## 4. Padrão de pastas e arquivos
+## Fluxo recomendado
 
-Toda pasta de tecnologia ou módulo **deve** seguir esta estrutura. Use o [`TEMPLATE.md`](./TEMPLATE.md) como ponto de partida.
+1. Faça um fork do repositório
+2. Clone o fork para a sua máquina
+3. Crie uma branch com um nome descritivo
+4. Edite ou adicione o conteúdo necessário
+5. Revise a estrutura e o texto antes de enviar
+6. Faça commit e push
+7. Abra um pull request explicando o que foi alterado
 
-```
-trilha/tecnologia/modulo/
-├── README.md        # Obrigatório: visão geral do módulo
-├── conceito.md      # Explicação teórica clara e objetiva
-├── exemplo/         # Código funcional comentado
-│   ├── index.html   # (ou o arquivo principal da linguagem)
-│   └── README.md    # Explica o que o exemplo faz
-└── exercicio.md     # Desafio prático para o leitor resolver
-```
-
-### Regras de nomenclatura
-
-| O que | Formato | Exemplo |
-|---|---|---|
-| Pastas | `kebab-case` | `arrays-objetos`, `apis-rest` |
-| Arquivos Markdown | `kebab-case.md` | `conceito.md`, `exercicio.md` |
-| Arquivos de código | Siga a convenção da linguagem | `Main.java`, `index.js` |
-
-### Conceitos compartilhados entre linguagens
-
-Se um conceito é o mesmo independente da linguagem (ex: o que é uma API REST, o que é orientação a objetos), coloque a **explicação teórica** em `_conceitos-gerais/` dentro da trilha. Cada pasta de linguagem deve ter apenas a **implementação prática** daquele conceito.
-
-```
-backend/
-├── _conceitos-gerais/
-│   └── o-que-e-api-rest.md     ← teoria aqui (uma vez só)
-├── node-javascript/
-│   └── apis-rest/              ← implementação em Node
-└── java/
-    └── apis-rest/              ← implementação em Java
-```
-
----
-
-## 5. Padrão de commits
-
-Usamos o padrão **Conventional Commits**. Ele torna o histórico do projeto legível e profissional.
-
-```
-tipo(escopo): descrição curta em minúsculas
-```
-
-### Tipos permitidos
-
-| Tipo | Quando usar |
-|---|---|
-| `feat` | Novo conteúdo ou funcionalidade |
-| `fix` | Correção de erro, typo ou informação errada |
-| `improve` | Melhoria em conteúdo já existente |
-| `docs` | Alteração em README, CONTRIBUTING ou documentação geral |
-| `refactor` | Reorganização de pastas ou arquivos sem mudar o conteúdo |
-| `chore` | Tarefas de manutenção (ex: atualizar links quebrados) |
-
-### Exemplos
+Exemplo:
 
 ```bash
-feat(backend/java): adiciona modulo de introducao com conceito e exemplo
-fix(frontend/react): corrige erro no exemplo de useState
-improve(fundamentos/css): adiciona mais exemplos ao modulo de flexbox
-docs(contributing): atualiza secao de fluxo de trabalho
-refactor(mobile): reorganiza estrutura de pastas do flutter
+git checkout -b feat/frontend-css-exemplos
 ```
 
 ---
 
-## 6. Padrão de Pull Request
+## Estrutura do repositório
 
-Ao abrir um PR, preencha o título e a descrição seguindo este modelo:
+O projeto está organizado em categorias principais:
 
-### Título
+- `Guias/` — materiais de apoio
+- `Trilhas/` — conteúdo principal por área
+- `Projetos/` — projetos e exemplos adicionais
+- `Img/` — imagens e recursos visuais
+- `Atualizacoes.md` — registro de alterações
+
+Ao criar ou ajustar conteúdo, mantenha a organização consistente com a pasta correspondente. Por exemplo, se for conteúdo de frontend, ele deve ficar em `Trilhas/Frontend/`.
+
+---
+
+## Padrões de conteúdo
+
+Ao adicionar conteúdo novo, procure seguir estas diretrizes:
+
+- usar linguagem clara e acessível
+- explicar o conceito antes de mostrar o exemplo
+- incluir exemplos práticos quando possível
+- manter os arquivos bem nomeados e organizados
+- preferir conteúdo original ou adaptado, sem copiar de forma desnecessária
+
+Uma boa estrutura para um módulo é:
+
+```text
+nome-do-modulo/
+├── README.md
+├── conceito.md
+├── exemplo/
+│   ├── README.md
+│   └── <arquivo>
+└── exercicio.md
 ```
-feat(backend/java): adiciona módulo de introdução
+
+Se o conteúdo for mais simples, você pode adaptar a estrutura conforme a necessidade. O mais importante é manter a consistência e facilitar a leitura.
+
+---
+
+## Padrão de commits
+
+Use mensagens curtas e descritivas. Um padrão simples é:
+
+```text
+tipo(escopo): descrição curta
 ```
 
-### Descrição (cole este template no seu PR)
+Exemplos:
+
+```bash
+feat(frontend): adiciona novo módulo de CSS
+fix(docs): corrige link no README
+docs(contributing): melhora instruções de contribuição
+```
+
+---
+
+## Padrão de pull request
+
+Ao abrir um pull request, descreva:
+
+- o que foi alterado
+- qual área do projeto foi afetada
+- se houve testes ou validação do conteúdo
+- se há alguma dúvida ou observação adicional
+
+Uma descrição simples já ajuda bastante:
 
 ```markdown
 ## O que foi feito?
-Descreva de forma clara o que você adicionou, corrigiu ou melhorou.
+Descreva resumidamente as mudanças.
 
-## Trilha afetada
-- [ ] fundamentos
-- [ ] frontend
-- [ ] backend
-- [ ] mobile
-- [ ] games
-- [ ] devops
-- [ ] banco-de-dados
-- [ ] inteligencia-artificial
-
-## Checklist
-- [ ] Segui a estrutura de pastas do CONTRIBUTING.md
-- [ ] Usei o TEMPLATE.md como base
-- [ ] O conteúdo tem: conceito, exemplo e exercício
-- [ ] Os arquivos estão nomeados em kebab-case
-- [ ] Testei o código dos exemplos (se houver)
-- [ ] Não há erros de português ou informações incorretas
+## Área afetada
+- [ ] Frontend
+- [ ] Backend
+- [ ] Banco de dados
+- [ ] DevOps
+- [ ] Outros
 
 ## Observações
-Alguma dúvida, contexto extra ou sugestão para o revisor?
+Adicione qualquer detalhe relevante.
 ```
 
 ---
 
-## 7. Criando uma nova trilha
+## Critérios de qualidade
 
-Se quiser propor uma trilha que ainda não existe (ex: `seguranca`, `blockchain`):
+Antes de enviar sua contribuição, verifique se:
 
-1. **Abra uma Issue** antes de qualquer código com o título: `[Nova Trilha] Nome da Trilha`
-2. Descreva: o que será ensinado, tecnologias cobertas e quem seria o mentor responsável
-3. Aguarde a aprovação do líder do projeto
-4. Após aprovação, crie a estrutura seguindo o padrão do repositório e abra o PR
-
-> PRs de novas trilhas sem Issue aprovada prévia serão recusados.
-
----
-
-## 8. Critérios de qualidade
-
-Todo conteúdo enviado será revisado com base nestes critérios:
-
-### Conteúdo
-- ✅ Tem explicação conceitual clara (o "porquê", não só o "como")
-- ✅ Tem exemplo de código funcional e comentado
-- ✅ Tem exercício prático para o leitor
-- ✅ Menciona erros comuns e como evitá-los
-- ✅ Português correto e linguagem acessível
-
-### Código
-- ✅ Funciona corretamente (testado antes do PR)
-- ✅ Está comentado nos pontos importantes
-- ✅ Segue as boas práticas da linguagem/tecnologia
-- ✅ HTML e CSS seguem padrões de acessibilidade (ARIA, semântica)
-- ✅ CSS segue abordagem Mobile-First
-
-### Estrutura
-- ✅ Pastas e arquivos nomeados em `kebab-case`
-- ✅ Tem `README.md` na pasta do módulo
-- ✅ Segue a hierarquia definida neste documento
+- o conteúdo está claro e bem escrito
+- o exemplo faz sentido para o tema
+- a estrutura do material está organizada
+- os links e nomes de arquivos estão corretos
+- não há informações contraditórias ou desatualizadas
 
 ---
 
-## 9. O que NÃO fazer
+## O que evitar
 
-- ❌ Não commite direto na branch `main`
-- ❌ Não copie conteúdo de outros sites sem adaptar e citar a fonte
-- ❌ Não crie pastas com espaços ou letras maiúsculas (`Minha Pasta/` → ❌, `minha-pasta/` → ✅)
-- ❌ Não abra PR com conteúdo incompleto (sem exemplo ou sem exercício)
-- ❌ Não crie uma nova trilha sem aprovação prévia via Issue
-- ❌ Não altere arquivos de outra pessoa sem abrir uma Issue explicando o motivo
+- não envie conteúdo incompleto sem contexto ou explicação
+- não copie material sem adaptação
+- não crie pastas ou nomes confusos
+- não faça alterações sem necessidade em arquivos de terceiros
+- não envie uma contribuição sem revisar a leitura final
 
 ---
 
-## 10. Dúvidas e contato
+## Dúvidas e contato
 
-> Ficou com dúvida sobre como usar este template? Abra uma Issue com a tag `duvida` ou entre em contato com o líder do projeto.
+Se tiver dúvidas, abra uma issue no repositório. A comunidade pode ajudar a orientar o melhor caminho para a sua contribuição.
 
+- o exemplo faz sentido para o tema
+- a estrutura do material está organizada
+- os links e nomes de arquivos estão corretos
+- não há informações contraditórias ou desatualizadas
+
+---
+
+## O que evitar
+
+- não envie conteúdo incompleto sem contexto ou explicação
+- não copie material sem adaptação
+- não crie pastas ou nomes confusos
+- não faça alterações sem necessidade em arquivos de terceiros
+- não envie uma contribuição sem revisar a leitura final
+
+---
+
+## Dúvidas e contato
+
+Se tiver dúvidas, abra uma issue no repositório. A comunidade pode ajudar a orientar o melhor caminho para a sua contribuição.
