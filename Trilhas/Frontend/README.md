@@ -8,4 +8,4 @@ Frontend é a parte de uma aplicação com a qual as pessoas interagem diretamen
 - `Frameworks/` — tecnologias para estruturar interfaces e aplicações.
 - `Ferramentas/` — ferramentas de desenvolvimento e recursos para o fluxo de trabalho.
 
-Uma sequência possível é estudar HTML, CSS e JavaScript antes de avançar para TypeScript, frameworks e ferramentas. A ordem pode ser adaptada ao seu objetivo.
+Uma sequência possível é estudar HTML, CSS, JavaScript e DOM antes de avançar para TypeScript, frameworks e ferramentas. A ordem pode ser adaptada ao seu objetivo.
