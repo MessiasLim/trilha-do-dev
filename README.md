@@ -28,21 +28,21 @@
 
 ## Navegação
 
-- [Sobre o projeto](#-sobre-o-projeto)
-- [Para quem é este projeto](#-para-quem-é-este-projeto)
-- [Status e roadmap](#-status-e-roadmap)
-- [O que você encontra aqui](#-o-que-você-encontra-aqui)
-- [Estrutura do repositório](#-estrutura-do-repositório)
-- [Como começar (guia rápido)](#-como-começar-guia-rápido)
-- [Trilhas de aprendizagem](#-trilhas-de-aprendizagem)
-- [Materiais de apoio](#-materiais-de-apoio)
-- [Sugestão de percurso para iniciantes](#-sugestão-de-percurso-para-iniciantes)
-- [Como usar este repositório](#-como-usar-este-repositório)
-- [Como contribuir](#-como-contribuir)
-- [FAQ - Perguntas frequentes](#-faq--perguntas-frequentes)
-- [Licença](#-licença)
-- [Agradecimentos](#-agradecimentos)
-- [Contato](#-contato)
+- [Sobre o projeto](#sobre-o-projeto)
+- [Para quem é este projeto](#para-quem-é-este-projeto)
+- [Status e roadmap](#status-e-roadmap)
+- [O que você encontra aqui](#o-que-você-encontra-aqui)
+- [Estrutura do repositório](#estrutura-do-repositório)
+- [Como começar (guia rápido)](#como-começar-guia-rápido)
+- [Trilhas de aprendizagem](#trilhas-de-aprendizagem)
+- [Materiais de apoio](#materiais-de-apoio)
+- [Sugestão de percurso para iniciantes](#sugestão-de-percurso-para-iniciantes)
+- [Como usar este repositório](#como-usar-este-repositório)
+- [Como contribuir](#como-contribuir)
+- [FAQ - Perguntas frequentes](#faq---perguntas-frequentes)
+- [Licença](#licença)
+- [Agradecimentos](#agradecimentos)
+- [Contato](#contato)
 
 ---
 
@@ -75,6 +75,25 @@ O TrilhaDoDev foi pensado para:
 - **Contribuidores** que desejam compartilhar conhecimento e ajudar a construir uma referência aberta em português.
 
 > **Não é necessário conhecimento prévio em programação** para começar pelas trilhas iniciais. O projeto assume que a pessoa sabe usar um editor de texto e navegar por arquivos, mas não exige experiência com código.
+
+---
+
+## Status e roadmap
+
+O projeto encontra-se **em construção ativa**. O quadro abaixo resume o estado atual e as próximas expansões planejadas.
+
+| Área | Status atual | Próximos passos |
+| --- | --- | --- |
+| Frontend (HTML, CSS, DOM) | Aulas completas de fundamentos | Expandir para frameworks e ferramentas |
+| JavaScript (Linguagens) | 7 aulas introdutórias (variáveis a funções) | Adicionar exercícios, projetos e tópicos avançados |
+| Backend | Estrutura inicial | Fundamentos, APIs e frameworks |
+| Banco de dados | Estrutura inicial | SQL, bancos relacionais, NoSQL |
+| Data Science | Estrutura inicial | Python, Pandas, NumPy |
+| DevOps | Estrutura inicial | Linux, containers, CI/CD, nuvem |
+| IA | Estrutura inicial | Fundamentos, machine learning, deep learning, IA generativa |
+| Mobile | Estrutura inicial | Tecnologias para desenvolvimento mobile |
+
+> **Legenda:** *Estrutura inicial* = diretórios e temas organizados, mas sem aulas completas ainda.
 
 ---
 
@@ -173,6 +192,39 @@ Se você está começando do zero em desenvolvimento web, a ordem sugerida é:
 
 ---
 
+## Trilhas de aprendizagem
+
+As trilhas são o núcleo do projeto e estão organizadas por área de desenvolvimento. Cada uma indica o que estudar, em que ordem e com quais materiais práticos. Algumas já possuem aulas completas; outras estão estruturadas e aguardam contribuições.
+
+### Frontend
+
+Fundamentos de HTML, CSS e estrutura inicial de DOM, com aulas que vão da estrutura básica de uma página até estilização e manipulação inicial de elementos. Diretórios para frameworks e ferramentas de build já estão preparados para expansão. É a porta de entrada mais comum para quem quer desenvolver para a web, e o entendimento de HTML e CSS é pré-requisito para qualquer especialidade de front-end.
+
+[Acessar a trilha Frontend](./Trilhas/Frontend/README.md)
+
+### Linguagens (JavaScript)
+
+Sete aulas introdutórias, de variáveis a funções, formando o conteúdo mais completo do repositório até o momento. A estrutura para outras linguagens e para tópicos avançados de JavaScript já está preparada. JavaScript é a linguagem da web e uma das mais usadas no mundo; mesmo quem seguir para backend ou mobile se beneficia dos fundamentos.
+
+[Acessar as aulas de JavaScript](./Trilhas/Linguagens/JavaScript/)
+
+### Trilhas em expansão
+
+As trilhas abaixo já possuem organização por temas e diretórios preparados, mas ainda não têm aulas completas. Elas representam o roadmap de conteúdo do projeto.
+
+| Trilha | Foco principal | Link |
+| --- | --- | --- |
+| **Backend** | Fundamentos, APIs e frameworks | [Acessar](./Trilhas/Backend/README.md) |
+| **Banco de dados** | SQL, bancos relacionais, NoSQL e ferramentas de acesso | [Acessar](./Trilhas/Banco-de-dados/README.md) |
+| **Data Science** | Python, Pandas e NumPy | [Acessar](./Trilhas/Data-Science/README.md) |
+| **DevOps** | Linux, containers, CI/CD, nuvem e infraestrutura | [Acessar](./Trilhas/DevOps/README.md) |
+| **Inteligência Artificial** | Fundamentos, machine learning, deep learning e IA generativa | [Acessar](./Trilhas/IA/README.md) |
+| **Mobile** | Tecnologias para desenvolvimento mobile | [Acessar](./Trilhas/Mobile/README.md) |
+
+> **Contribuições são especialmente bem-vindas nessas trilhas em expansão.** Se você domina um desses temas, considere criar uma aula ou um guia introdutório.
+
+---
+
 ## Materiais de apoio
 
 Além das trilhas, o repositório mantém um conjunto de materiais que dão suporte ao estudo e à colaboração:
@@ -185,7 +237,7 @@ Além das trilhas, o repositório mantém um conjunto de materiais que dão supo
 
 ---
 
-##  Sugestão de percurso para iniciantes
+## Sugestão de percurso para iniciantes
 
 Se você está começando e não sabe exatamente por onde ir, esta é uma sequência testada e recomendada. Ela assume que você tem **de 5 a 10 horas por semana** para estudar.
 
@@ -217,7 +269,7 @@ Se você está começando e não sabe exatamente por onde ir, esta é uma sequê
 ### Para contribuidores
 
 1. Leia o [**Guia de contribuição**](./CONTRIBUTING.md) e o [**Código de conduta**](./CODE_OF_CONDUCT.md).
-2. Verifique o [**modelo de conteúdo (`TEMPLATE.md`)`**](./TEMPLATE.md) antes de criar uma nova aula ou guia.
+2. Verifique o [**modelo de conteúdo (`TEMPLATE.md`)**](./TEMPLATE.md) antes de criar uma nova aula ou guia.
 3. Escolha uma trilha em expansão ou uma lacuna no conteúdo existente.
 4. Abra uma **issue** para discutir sua proposta antes de enviar um **pull request** (especialmente para conteúdos extensos).
 5. Siga as boas práticas de escrita: linguagem clara, exemplos práticos, links funcionais e formatação Markdown consistente.
@@ -304,17 +356,17 @@ Sim. Abra uma issue com sua sugestão. Trilhas em expansão já estão mapeadas,
 
 ---
 
-## Licença
-
-Este projeto está licenciado sob a **licença MIT**. Consulte o arquivo [LICENSE](./LICENSE) para os termos completos.
-
----
-
 ## Agradecimentos
 
 O TrilhaDoDev existe graças ao esforço de pessoas que acreditam em educação aberta e colaborativa. Agradecemos a todos que já contribuíram com aulas, correções, sugestões e feedbacks.
 
 Se você contribuiu e gostaria de ser reconhecido, sinta-se à vontade para abrir uma issue ou enviar um pull request adicionando seu nome a esta seção (ou à seção de contribuidores no [CHANGELOG.md](./CHANGELOG.md)).
+
+---
+
+## Licença
+
+Este projeto está licenciado sob a **licença MIT**. Consulte o arquivo [LICENSE](./LICENSE) para os termos completos.
 
 ---
 
