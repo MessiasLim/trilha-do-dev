@@ -1,185 +1,101 @@
 # Como contribuir com o TrilhaDoDev
 
-Obrigado por querer participar do projeto. O TrilhaDoDev é uma iniciativa colaborativa e sua contribuição ajuda a fortalecer o aprendizado de toda a comunidade.
-
----
+Obrigado por querer participar do TrilhaDoDev. O projeto é colaborativo e busca oferecer conteúdo de estudo claro, prático e acessível em português.
 
 ## Antes de começar
 
-Antes de editar qualquer arquivo, leia:
+Leia estes arquivos para entender o projeto e o padrão esperado:
 
-- [README.md](README.md) — visão geral do projeto
-- [TEMPLATE.md](TEMPLATE.md) — estrutura recomendada para novos conteúdos
-- [Guias/como-contribuir.md](Guias/como-contribuir.md) — boas práticas de contribuição
-- [Guias/como-usar-git.md](Guias/como-usar-git.md) — uso básico de Git/GitHub
+- [README.md](./README.md) — visão geral e pontos de entrada.
+- [TEMPLATE.md](./TEMPLATE.md) — estrutura sugerida para aulas, módulos, exercícios e projetos.
+- [Código de conduta](./CODE_OF_CONDUCT.md) — expectativas para a comunidade.
+- [Guias de estudo](./Guias/README.md) — materiais de apoio.
+- [Guia de Git e GitHub](./Guias/como-usar-git-e-github.md) — fluxo de versionamento e colaboração.
 
-Também é útil ter no seu computador:
+Você precisará de uma conta no GitHub, Git instalado e um editor de texto ou código.
 
-- uma conta no GitHub
-- Git instalado
-- um editor de código, como VS Code
+## O que pode ser contribuído
 
----
+- Correções de conteúdo, ortografia, acessibilidade ou links.
+- Melhorias em explicações e exemplos existentes.
+- Novas aulas, exercícios, módulos e projetos.
+- Organização de uma área que ainda esteja em construção.
+- Issues com sugestões, dúvidas ou propostas de novos temas.
 
-## Tipos de contribuição
+## Fluxo de contribuição
 
-Você pode contribuir de várias formas:
-
-- corrigindo informações incorretas, erros de português ou links quebrados
-- melhorando explicações e exemplos
-- adicionando novos exercícios ou materiais práticos
-- criando novos módulos dentro de uma trilha existente
-- sugerindo uma nova trilha ou tema por meio de issue
-
----
-
-## Fluxo recomendado
-
-1. Faça um fork do repositório
-2. Clone o fork para a sua máquina
-3. Crie uma branch com um nome descritivo
-4. Edite ou adicione o conteúdo necessário
-5. Revise a estrutura e o texto antes de enviar
-6. Faça commit e push
-7. Abra um pull request explicando o que foi alterado
+1. Abra ou procure uma issue para entender o contexto da alteração, quando aplicável.
+2. Faça um fork do repositório e clone o seu fork.
+3. Crie uma branch descritiva a partir de `main`.
+4. Faça a alteração mantendo o padrão da pasta e dos arquivos relacionados.
+5. Revise o conteúdo e valide os links relativos.
+6. Faça um commit pequeno e descritivo.
+7. Envie a branch para o seu fork e abra um pull request.
 
 Exemplo:
 
 ```bash
-git checkout -b feat/frontend-css-exemplos
+git checkout -b docs/frontend-fundamentos
+git add README.md
+git commit -m "docs(frontend): atualiza guia de fundamentos"
+git push -u origin docs/frontend-fundamentos
 ```
 
----
+## Organização do repositório
 
-## Estrutura do repositório
+- `Guias/` — materiais de apoio para estudo, pesquisa e Git/GitHub.
+- `Trilhas/` — conteúdo principal organizado por área.
+- `Img/` — imagens e recursos visuais.
+- `TEMPLATE.md` — modelo geral para novos conteúdos.
+- `CHANGELOG.md` — histórico de alterações relevantes.
 
-O projeto está organizado em categorias principais:
+Na trilha de Frontend, os fundamentos estão em `Trilhas/Frontend/Fundamentos/`, com conteúdos em `HTML/`, `CSS/` e a estrutura inicial de `DOM/`. Respeite maiúsculas e minúsculas nos nomes: os caminhos podem ser diferenciados em sistemas Linux e em servidores Git.
 
-- `Guias/` — materiais de apoio
-- `Trilhas/` — conteúdo principal por área
-- `Projetos/` — projetos e exemplos adicionais
-- `Img/` — imagens e recursos visuais
-- `Atualizacoes.md` — registro de alterações
+## Padrões para novos conteúdos
 
-Ao criar ou ajustar conteúdo, mantenha a organização consistente com a pasta correspondente. Por exemplo, se for conteúdo de frontend, ele deve ficar em `Trilhas/Frontend/`.
+- Coloque o arquivo na trilha e no assunto corretos.
+- Use nomes descritivos, em minúsculas quando criar novos arquivos, com palavras separadas por hífen.
+- Explique o objetivo e os pré-requisitos antes do conteúdo principal.
+- Apresente o conceito antes do exemplo e inclua exercícios quando fizer sentido.
+- Prefira exemplos funcionais, originais e fáceis de reproduzir.
+- Use Markdown consistente e links relativos que realmente existam.
+- Inclua referências confiáveis quando o conteúdo depender de uma fonte externa.
+- Não inclua senhas, tokens, dados pessoais ou arquivos gerados desnecessários.
 
----
+O [TEMPLATE.md](./TEMPLATE.md) contém estruturas prontas para módulos, projetos e exercícios.
 
-## Padrões de conteúdo
+## Commits
 
-Ao adicionar conteúdo novo, procure seguir estas diretrizes:
-
-- usar linguagem clara e acessível
-- explicar o conceito antes de mostrar o exemplo
-- incluir exemplos práticos quando possível
-- manter os arquivos bem nomeados e organizados
-- preferir conteúdo original ou adaptado, sem copiar de forma desnecessária
-
-Uma boa estrutura para um módulo é:
+Use mensagens curtas no formato `tipo(escopo): descrição`, por exemplo:
 
 ```text
-nome-do-modulo/
-├── README.md
-├── conceito.md
-├── exemplo/
-│   ├── README.md
-│   └── <arquivo>
-└── exercicio.md
+feat(javascript): adiciona aula sobre funções
+fix(docs): corrige link para o guia de Git
+docs(contributing): esclarece fluxo de pull request
 ```
 
-Se o conteúdo for mais simples, você pode adaptar a estrutura conforme a necessidade. O mais importante é manter a consistência e facilitar a leitura.
+Tipos comuns são `feat`, `fix`, `docs`, `refactor` e `chore`.
 
----
+## Pull requests
 
-## Padrão de commits
+Descreva no pull request:
 
-Use mensagens curtas e descritivas. Um padrão simples é:
+- o que foi alterado e por quê;
+- quais pastas ou áreas foram afetadas;
+- como o conteúdo foi revisado ou validado;
+- dúvidas, limitações ou pontos que precisam de atenção.
 
-```text
-tipo(escopo): descrição curta
-```
+Mantenha cada pull request focado em um objetivo. Se a mudança for grande, divida-a em partes menores quando possível.
 
-Exemplos:
+## Checklist antes de enviar
 
-```bash
-feat(frontend): adiciona novo módulo de CSS
-fix(docs): corrige link no README
-docs(contributing): melhora instruções de contribuição
-```
+- [ ] O conteúdo está claro, correto e adequado ao nível proposto.
+- [ ] Os arquivos estão na pasta correta e seguem a nomenclatura do projeto.
+- [ ] Os links relativos foram verificados.
+- [ ] Não há duplicação desnecessária ou conteúdo copiado sem adaptação.
+- [ ] O Markdown foi revisado no preview.
+- [ ] O pull request explica a alteração e sua validação.
 
----
+## Dúvidas e convivência
 
-## Padrão de pull request
-
-Ao abrir um pull request, descreva:
-
-- o que foi alterado
-- qual área do projeto foi afetada
-- se houve testes ou validação do conteúdo
-- se há alguma dúvida ou observação adicional
-
-Uma descrição simples já ajuda bastante:
-
-```markdown
-## O que foi feito?
-Descreva resumidamente as mudanças.
-
-## Área afetada
-- [ ] Frontend
-- [ ] Backend
-- [ ] Banco de dados
-- [ ] DevOps
-- [ ] Outros
-
-## Observações
-Adicione qualquer detalhe relevante.
-```
-
----
-
-## Critérios de qualidade
-
-Antes de enviar sua contribuição, verifique se:
-
-- o conteúdo está claro e bem escrito
-- o exemplo faz sentido para o tema
-- a estrutura do material está organizada
-- os links e nomes de arquivos estão corretos
-- não há informações contraditórias ou desatualizadas
-
----
-
-## O que evitar
-
-- não envie conteúdo incompleto sem contexto ou explicação
-- não copie material sem adaptação
-- não crie pastas ou nomes confusos
-- não faça alterações sem necessidade em arquivos de terceiros
-- não envie uma contribuição sem revisar a leitura final
-
----
-
-## Dúvidas e contato
-
-Se tiver dúvidas, abra uma issue no repositório. A comunidade pode ajudar a orientar o melhor caminho para a sua contribuição.
-
-- o exemplo faz sentido para o tema
-- a estrutura do material está organizada
-- os links e nomes de arquivos estão corretos
-- não há informações contraditórias ou desatualizadas
-
----
-
-## O que evitar
-
-- não envie conteúdo incompleto sem contexto ou explicação
-- não copie material sem adaptação
-- não crie pastas ou nomes confusos
-- não faça alterações sem necessidade em arquivos de terceiros
-- não envie uma contribuição sem revisar a leitura final
-
----
-
-## Dúvidas e contato
-
-Se tiver dúvidas, abra uma issue no repositório. A comunidade pode ajudar a orientar o melhor caminho para a sua contribuição.
+Abra uma issue para dúvidas e sugestões. Ao participar, siga o [Código de conduta](./CODE_OF_CONDUCT.md) e mantenha as discussões respeitosas, objetivas e acolhedoras.
